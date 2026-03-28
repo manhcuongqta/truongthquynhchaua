@@ -4,11 +4,11 @@ body {
 }
 
 .login-box {
-  width: 320px;
+  width: 300px;
   margin: 120px auto;
   padding: 30px;
   background: white;
-  border-radius: 12px;
+  border-radius: 10px;
   text-align: center;
 }
 
@@ -21,7 +21,7 @@ input {
 button {
   padding: 10px;
   width: 100%;
-  background: #007bff;
+  background: blue;
   color: white;
   border: none;
 }
