@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+</head>
+<body>
+
+<h1>Dashboard</h1>
+
+<div id="adminPanel" style="display:none;">
+  <h2>Quản lý học sinh</h2>
+  <button onclick="addStudent()">Thêm học sinh</button>
+</div>
+
+<div id="studentPanel" style="display:none;">
+  <h2>Xem điểm</h2>
+  <p>Điểm của bạn: 8.5</p>
+</div>
+
+<script>
+let role = localStorage.getItem("role");
+
+if (role === "admin") {
+  document.getElementById("adminPanel").style.display = "block";
+} else {
+  document.getElementById("studentPanel").style.display = "block";
+}
+
+function addStudent() {
+  alert("Chức năng thêm học sinh (sẽ nâng cấp sau)");
+}
+</script>
+
+</body>
+</html>
